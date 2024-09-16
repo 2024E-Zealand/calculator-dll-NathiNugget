@@ -17,13 +17,13 @@ namespace CalculatorClassLibrary
         public Calculator() { }
 
         /// <summary>
-        /// Method to make a calculation based on an operation and to operands
+        /// Method to make a calculation based on an operation and two operands
         /// </summary>
         /// <param name="operation">A character for the operation</param>
         /// <param name="x">First number</param>
         /// <param name="y">Second number</param>
         /// <returns>A double containing the result of the operation</returns>
-        /// <exception cref="NotImplementedException"></exception>
+        /// <exception cref="NotImplementedException">Thrown if the user tries to do an operation not yet supported by the calculator</exception>
 
         public double Calculate(char operation, int x, int y)
         {
